@@ -1,0 +1,524 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Unit 9 Section 1 : 2-D Shapes</title>
+
+    <script>
+        check = new Image();	check.src = 'check78.gif';
+        correct = new Image();	correct.src = 'correct78.gif';
+        wrong = new Image();	wrong.src = 'wrong78.gif';
+        tellme = new Image();	tellme.src = 'tellme61.gif';
+        blank = new Image();	blank.src = 'blank61.gif';
+
+        abc='abcdefghijklmnopqrstuvwxyz';
+        isIE=0;
+        if( ((navigator.userAgent.indexOf("MSIE") != -1) && (navigator.userAgent.indexOf("Opera") == -1)) )isIE=1; if (navigator.userAgent.indexOf("MSIE 6.") != -1) isIE=6;
+
+        function clearForms(){	for (c=0; c<document.forms.length; c++){document.forms[c].reset();} }
+
+        numq = 31;  corr = 0;  wron = 0;  ag = 0;  tellm = 0;
+    </script>
+
+
+    <link type="text/css" href="page.css"  rel="stylesheet" />
+    <link type="text/css" href="element.css"  rel="stylesheet" />
+    <link type="text/css" href="fraction.css"  rel="stylesheet" />
+    <link type="text/css" href="section1.css"  rel="stylesheet" />
+
+
+    <script src="script.js"></script>
+    <script src="sol1.js"></script>
+
+    <!-- SWFObject embed by Geoff Stearns geoff@deconcept.com http://blog.deconcept.com/swfobject/ -->
+    <script src="swfobject.js"></script>
+
+    <script src="gombrendez.js"></script>
+    <script src="check.js"></script>
+    <script src="utils.js"></script>
+    <script src="tomb2.js"></script>
+
+    <script src="nm.js"></script>
+    <script src="select.js"></script>
+    <script src="halmaz.js"></script>
+    <script src="coordsys.js"></script>
+
+    <script>
+        function before(qu,part){}
+
+        function after(qu,part,iscorrect){ if(iscorrect)sol(qu,part); }
+
+
+
+
+    </script>
+</head>
+
+<body id="sect1" onload="clearForms();">
+<div id="intro">
+    <h1>Unit 9 Section 1 : 2-D Shapes</h1>
+
+    <p>
+        The following table gives the names of some 2-D shapes. In this section we will consider the properties of some of these shapes.
+    </p>
+
+    <table id="introt">
+        <tr>
+            <td class="name">Rectangle</td>
+            <td class="pic"><img src="s1i1.png" /></td>
+            <td class="text">All angles are right angles (90°) Opposite sides have the same length</td>
+        </tr>
+        <tr class="shape">
+            <td class="name">Square</td>
+            <td class="pic"><img src="s1i2.png" /></td>
+            <td class="text">the same length All angles are right angles (90°)</td>
+        </tr>
+        <tr class="shape">
+            <td class="name">Parallelogram</td>
+            <td class="pic"><img src="s1i3.png" /></td>
+            <td class="text">Opposite sides have the same length</td>
+        </tr>
+        <tr class="shape">
+            <td class="name">Rhombus</td>
+            <td class="pic"><img src="s1i4.png" /></td>
+            <td class="text">All the sides have the same length Diagonals bisect at right angles</td>
+        </tr>
+        <tr class="shape">
+            <td class="name">Trapezium</td>
+            <td class="pic"><img src="s1i5.png" /></td>
+            <td class="text"></td>
+        </tr>
+        <tr class="shape">
+            <td class="name">Kite</td>
+            <td class="pic"><img src="s1i6.png" /></td>
+            <td class="text">Diagonals intersect at right angles</td>
+        </tr>
+        <tr class="shape">
+            <td class="name">Isosceles Triangle</td>
+            <td class="pic"><img src="s1i7.png" /></td>
+            <td class="text">Two sides have the same length and the angles opposite these two sides are equal</td>
+        </tr>
+        <tr class="shape">
+            <td class="name">Equilateral Triangle</td>
+            <td class="pic"><img src="s1i8.png" /></td>
+            <td class="text">All angles are 60°</td>
+        </tr>
+    </table>
+</div>
+
+<div id="examples">
+    <h2>Example 1</h2>
+    <p>Draw the lines of symmetry of an equilateral triangle.</p>
+    <div id="example1" class="example">
+        <img class="showbut" src="showme.gif" onclick="showp(this,1,'a')" />
+        <span class="show ex" id="show1a">
+			<p>There are 3 lines of symmetry, as shown in the diagram. They join each vertex (corner) to the midpoint of the opposite side.</p>
+			<div class="centerimage"><img src="s1e1.png" /></div>
+		</span>
+    </div>
+
+    <h2>Example 2</h2>
+    <p>Name each of the following shapes:</p>
+    <div id="example2" class="example">
+        <div class="parttitle">(a)</div>
+        <div class="partbody">
+            <img src="s1e2a.png" />
+            <img class="showbut" src="showme.gif" onclick="showp(this,2,'a')" />
+            <div class="show ex" id="show2a">
+                <p>This is a <em>rhombus</em> because all the sides have the <em>same</em> lengths.</p>
+            </div>
+        </div>
+        <div class="partdelim"></div>
+
+        <div class="parttitle">(b)</div>
+        <div class="partbody">
+            <img src="s1e2b.png" />
+            <img class="showbut" src="showme.gif" onclick="showp(this,2,'b')" />
+            <div class="show ex" id="show2b">
+                <p>This is an <em>isosceles triangle</em> because two of the angles are the same size.</p>
+            </div>
+        </div>
+        <div class="partdelim"></div>
+
+    </div>
+
+    <h2>Example 3</h2>
+    <p>State the order of rotational symmetry of:</p>
+    <div id="example3" class="example">
+        <table>
+            <tr><th>(a)</th><td>a <em>trapezium</em>,</td>
+                <td><img class="showbut" src="showme.gif" onclick="showp(this,3,'a')" />
+                    <div class="show ex" id="show3a">1</div></td></tr>
+            <tr><th>(b)</th><td>a <em>parallelogram</em>.</td>
+                <td><img class="showbut" src="showme.gif" onclick="showp(this,3,'b')" />
+                    <div class="show ex" id="show3b">2 (unless the parallelogram happens to be a square, in which case the order of rotational symmetry would be 4).</div></td></tr>
+        </table>
+    </div>
+
+</div>
+
+
+
+<div id="exercises">
+    <h2>Exercises</h2>
+    <script> exintro() </script>
+
+    <form id="q1form">
+        <b>Question 1</b><br />
+        <p>Name each of the following shapes:</p>
+        <div class="question">
+            <table>
+                <tr><th>(a)</th><td><img src="s1q1a.png" /></td>
+                    <td><input name="q1aib1" type="text" />	<span class="but"><script>xbuttonset(1,'a','m2');</script></span></td></tr>
+                <tr><th>(b)</th><td><img src="s1q1b.png" /></td>
+                    <td><input name="q1bib1" type="text" />	<span class="but"><script>xbuttonset(1,'b','m2');</script></span></td></tr>
+                <tr><th>(c)</th><td><img src="s1q1c.png" /></td>
+                    <td><input name="q1cib1" type="text" />	<span class="but"><script>xbuttonset(1,'c','m2');</script></span></td></tr>
+                <tr><th>(d)</th><td><img src="s1q1d.png" /></td>
+                    <td><input name="q1dib1" type="text" />	<span class="but"><script>xbuttonset(1,'d','m2');</script></span></td></tr>
+                <tr><th>(e)</th><td><img src="s1q1e.png" /></td>
+                    <td><input name="q1eib1" type="text" />	<span class="but"><script>xbuttonset(1,'e','m2');</script></span></td></tr>
+                <tr><th>(f)</th><td><img src="s1q1f.png" /></td>
+                    <td><input name="q1fib1" type="text" />	<span class="but"><script>xbuttonset(1,'f','m2');</script></span></td></tr>
+            </table>
+
+        </div>
+    </form>
+
+
+    <form id="q2form">
+        <b>Question 2</b><br />
+        <p><!--Draw diagrams to s-->Show the lines of symmetry of:</p>
+
+        <div class="question">
+            <div class="parttitle">(a)</div>
+            <div class="partbody">
+                <div id="q2a">
+                    <div id="g2a" class="flash">
+                        <strong>You need to upgrade your Flash Player</strong><br />Go to <a href="http://www.adobe.com/go/getflashplayer">http://www.adobe.com/go/getflashplayer</a>.
+                    </div>
+                    <script type="text/javascript">
+                        var so = new SWFObject("coordsys210.swf", "graph2a", "211", "211", "7", "#FFFFFF", "best");
+                        so.addParam("allowScriptAccess", "always"); so.addParam("wmode", "transparent");
+                        so.addVariable("qu", "2"); so.addVariable("part", "a"); so.addVariable("num", "1");
+                        so.addVariable("maxpoints", "0");
+                        so.addVariable("maxlines", "4");
+                        so.write("g2a");
+                    </script>
+                    <div class="but"><script>sbuttonset(2,'a','coord');</script></div>
+                </div>
+            </div>
+            <div class="partdelim"></div>
+
+            <div class="parttitle">(b)</div>
+            <div class="partbody">
+                <div id="q2b">
+                    <div id="g2b" class="flash">
+                        <strong>You need to upgrade your Flash Player</strong><br />Go to <a href="http://www.adobe.com/go/getflashplayer">http://www.adobe.com/go/getflashplayer</a>.
+                    </div>
+                    <script type="text/javascript">
+                        var so = new SWFObject("coordsys210.swf", "graph2b", "211", "211", "7", "#FFFFFF", "best");
+                        so.addParam("allowScriptAccess", "always"); so.addParam("wmode", "transparent");
+                        so.addVariable("qu", "2"); so.addVariable("part", "b"); so.addVariable("num", "1");
+                        so.addVariable("maxpoints", "0");
+                        so.addVariable("maxlines", "4");
+                        so.write("g2b");
+                    </script>
+                    <div class="but"><script>sbuttonset(2,'b','coord');</script></div>
+                </div>
+            </div>
+            <div class="partdelim"></div>
+
+            <div class="parttitle">(c)</div>
+            <div class="partbody">
+                <div id="q2c">
+                    <div id="g2c" class="flash">
+                        <strong>You need to upgrade your Flash Player</strong><br />Go to <a href="http://www.adobe.com/go/getflashplayer">http://www.adobe.com/go/getflashplayer</a>.
+                    </div>
+                    <script type="text/javascript">
+                        var so = new SWFObject("coordsys210.swf", "graph2c", "211", "211", "7", "#FFFFFF", "best");
+                        so.addParam("allowScriptAccess", "always"); so.addParam("wmode", "transparent");
+                        so.addVariable("qu", "2"); so.addVariable("part", "c"); so.addVariable("num", "1");
+                        so.addVariable("maxpoints", "0");
+                        so.addVariable("maxlines", "4");
+                        so.write("g2c");
+                    </script>
+                    <div class="but"><script>sbuttonset(2,'c','coord');</script></div>
+                </div>
+            </div>
+            <div class="partdelim"></div>
+
+            <div class="parttitle">(d)</div>
+            <div class="partbody">
+                <div id="q2d">
+                    <div id="g2d" class="flash">
+                        <strong>You need to upgrade your Flash Player</strong><br />Go to <a href="http://www.adobe.com/go/getflashplayer">http://www.adobe.com/go/getflashplayer</a>.
+                    </div>
+                    <script type="text/javascript">
+                        var so = new SWFObject("coordsys210.swf", "graph2d", "211", "211", "7", "#FFFFFF", "best");
+                        so.addParam("allowScriptAccess", "always"); so.addParam("wmode", "transparent");
+                        so.addVariable("qu", "2"); so.addVariable("part", "d"); so.addVariable("num", "1");
+                        so.addVariable("maxpoints", "0");
+                        so.addVariable("maxlines", "4");
+                        so.write("g2d");
+                    </script>
+                    <div class="but"><script>sbuttonset(2,'d','coord');</script></div>
+                </div>
+            </div>
+            <div class="partdelim"></div>
+
+        </div>
+    </form>
+
+
+    <form id="q3form">
+        <b>Question 3 </b><br />
+        <p>How many lines of symmetry are there for:</p>
+
+        <div class="question">
+            <div class="parttitle">(a)</div>
+            <div class="partbody">
+                a <em>parallelogram</em>, <input name="q3aib1" type="text" /><span class="but"><script>sbuttonset(3,'a');</script></span>
+
+            </div>
+            <div class="partdelim"></div>
+
+            <div class="parttitle">(b)</div>
+            <div class="partbody">
+                a <em>rhombus</em> ? <input name="q3bib1" type="text" /><span class="but"><script>sbuttonset(3,'b');</script></span>
+
+            </div>
+            <div class="partdelim"></div>
+
+        </div>
+    </form>
+
+
+    <form id="q4form">
+        <b>Question 4 </b><br />
+        <p>State whether each of the following statements is <em>true</em> or <em>false</em>.</p>
+        <div class="question">
+            <table>
+                <tr><th>(a)</th><td>A <em>square</em> is also a <em>rhombus</em>.</td>
+                    <td><select name="q4aib1" class="type-select" onchange="select_change(4,'a',1)">
+                        <option value="0">-</option>
+                        <option value="1">True</option>
+                        <option value="2">False</option>
+                    </select><span class="but"><script>buttonset(4,'a','select');</script></span></td></tr>
+                <tr><th>(b)</th><td>A <em>square</em> is also a <em>kite</em>.</td>
+                    <td><select name="q4bib1" class="type-select" onchange="select_change(4,'b',1)">
+                        <option value="0">-</option>
+                        <option value="1">True</option>
+                        <option value="2">False</option>
+                    </select><span class="but"><script>buttonset(4,'b','select');</script></span></td></tr>
+                <tr><th>(c)</th><td>A <em>rectangle</em> is also a <em>kite</em>.</td>
+                    <td><select name="q4cib1" class="type-select" onchange="select_change(4,'c',1)">
+                        <option value="0">-</option>
+                        <option value="1">True</option>
+                        <option value="2">False</option>
+                    </select><span class="but"><script>buttonset(4,'c','select');</script></span></td></tr>
+                <tr><th>(d)</th><td>A <em>parallelogram</em> is also a <em>kite</em>.</td>
+                    <td><select name="q4dib1" class="type-select" onchange="select_change(4,'d',1)">
+                        <option value="0">-</option>
+                        <option value="1">True</option>
+                        <option value="2">False</option>
+                    </select><span class="but"><script>buttonset(4,'d','select');</script></span></td></tr>
+                <tr><th>(e)</th><td>A <em>rectangle</em> is also a <em>parallelogram</em>.</td>
+                    <td><select name="q4eib1" class="type-select" onchange="select_change(4,'e',1)">
+                        <option value="0">-</option>
+                        <option value="1">True</option>
+                        <option value="2">False</option>
+                    </select><span class="but"><script>buttonset(4,'e','select');</script></span></td></tr>
+            </table>
+        </div>
+    </form>
+
+
+    <form id="q5form">
+        <b>Question 5 </b><br />
+        <p>Write down the order of rotational symmetry of:</p>
+        <div class="question">
+            <table>
+                <tr><th>(a)</th><td>a <em>rhombus</em></td>
+                    <td><input type="text" name="q5aib1" /><span class="but"><script>buttonset(5,'a','select');</script></span></td></tr>
+                <tr><th>(b)</th><td>a <em>square</em>,</td>
+                    <td><input type="text" name="q5bib1" /><span class="but"><script>buttonset(5,'b','select');</script></span></td></tr>
+                <tr><th>(c)</th><td>an <em>isosceles triangle</em>,</td>
+                    <td><input type="text" name="q5cib1" /><span class="but"><script>buttonset(5,'c','select');</script></span></td></tr>
+                <tr><th>(d)</th><td>an <em>equilateral triangle</em>,</td>
+                    <td><input type="text" name="q5dib1" /><span class="but"><script>buttonset(5,'d','select');</script></span></td></tr>
+                <tr><th>(e)</th><td>a <em>kite</em>.</td>
+                    <td><input type="text" name="q5eib1" /><span class="but"><script>buttonset(5,'e','select');</script></span></td></tr>
+            </table>
+
+        </div>
+    </form>
+
+
+    <form id="q6form">
+        <b>Question 6 </b><br />
+        <p>A triangle has <em>one</em> line of symmetry. What type of triangle is it?</p>
+        <div class="question">
+            <input name="q6aib1" type="text" />	<span class="but"><script>xbuttonset(6,'a','m2');</script></span>
+        </div>
+    </form>
+
+
+    <form id="q7form">
+        <b>Question 7 </b><br />
+
+        <p>How many symmetry lines have the following trapeziums?</p>
+
+        <img class="leftimage" src="s1q7a.png" /> <input name="q7aib1" type="text" />	<span class="but"><script>buttonset(7,'a');</script></span>
+        <div class="partdelim"></div>
+        <img class="leftimage" src="s1q7b.png" /> <input name="q7bib1" type="text" />	<span class="but"><script>buttonset(7,'b');</script></span>
+        <div class="partdelim"></div>
+
+        <!--<p>Draw a trapezium that has:</p>
+
+        <div class="question">
+            <div class="parttitle">(a)</div>
+          <div class="partbody">
+              <p><em>one</em> line of symmetry,</p>
+              <span class="but"><script>buttonset(7,'a');</script></span>
+          </div>
+          <div class="partdelim"></div>
+
+          <div class="parttitle">(b)</div>
+          <div class="partbody">
+              <p><em>no</em> lines of symmetry.</p>
+              <span class="but"><script>buttonset(7,'b');</script></span>
+          </div>
+          <div class="partdelim"></div>
+
+        </div>-->
+    </form>
+
+
+    <form id="q8form">
+        <b>Question 8 </b><br />
+        <p>A right-angled triangle is also an <em>isosceles</em> triangle. What sizes are the other angles in this triangle?</p>
+        <div class="question">
+            <input name="q8aib1" type="text" />°	<span class="but"><script>xbuttonset(8,'a','m2');</script></span>
+        </div>
+    </form>
+
+
+    <form id="q9form">
+        <b>Question 9 </b><br />
+        <p>For a semicircle:</p>
+
+        <div class="question">
+            <div class="parttitle">(a)</div>
+            <div class="partbody">
+                <p>show its lines of symmetry,</p>
+                <div id="q9a">
+                    <div id="g9a" class="flash">
+                        <strong>You need to upgrade your Flash Player</strong><br />Go to <a href="http://www.adobe.com/go/getflashplayer">http://www.adobe.com/go/getflashplayer</a>.
+                    </div>
+                    <script type="text/javascript">
+                        var so = new SWFObject("coordsys210.swf", "graph9a", "211", "211", "7", "#FFFFFF", "best");
+                        so.addParam("allowScriptAccess", "always"); so.addParam("wmode", "transparent");
+                        so.addVariable("qu", "9"); so.addVariable("part", "a"); so.addVariable("num", "1");
+                        so.addVariable("maxpoints", "0");
+                        so.addVariable("maxlines", "4");
+                        so.write("g9a");
+                    </script>
+                    <div class="but"><script>sbuttonset(9,'a','coord');</script></div>
+                </div>
+
+            </div>
+            <div class="partdelim"></div>
+
+            <div class="parttitle">(b)</div>
+            <div class="partbody">
+                <p>state its order of rotational symmetry.</p>
+                <input name="q9bib1" type="text" /><span class="but"><script>buttonset(9,'b');</script></span>
+            </div>
+            <div class="partdelim"></div>
+
+        </div>
+    </form>
+
+
+    <form id="q10form">
+        <b>Question 10 </b><br />
+        <p></p>
+
+        <div class="question">
+            <div class="parttitle">(a)</div>
+            <div class="partbody">
+                <p>Show the lines of symmetry of a <em>regular pentagon</em>.</p>
+                <div id="q10a">
+                    <div id="g10a" class="flash">
+                        <strong>You need to upgrade your Flash Player</strong><br />Go to <a href="http://www.adobe.com/go/getflashplayer">http://www.adobe.com/go/getflashplayer</a>.
+                    </div>
+                    <script type="text/javascript">
+                        var so = new SWFObject("coordsys210.swf", "graph10a", "211", "211", "7", "#FFFFFF", "best");
+                        so.addParam("allowScriptAccess", "always"); so.addParam("wmode", "transparent");
+                        so.addVariable("qu", "10"); so.addVariable("part", "a"); so.addVariable("num", "1");
+                        so.addVariable("maxpoints", "0");
+                        so.addVariable("maxlines", "6");
+                        so.write("g10a");
+                    </script>
+                    <div class="but"><script>sbuttonset(10,'a','coord');</script></div>
+                </div>
+
+            </div>
+            <div class="partdelim"></div>
+
+            <div class="parttitle">(b)</div>
+            <div class="partbody">
+                <p>State the order of rotational symmetry of a <em>regular octagon</em>.</p>
+                <input name="q10bib1" type="text" /><span class="but"><script>buttonset(10,'b');</script></span>
+            </div>
+            <div class="partdelim"></div>
+
+        </div>
+    </form>
+
+
+    <form id="q11form">
+        <b>Question 11 </b><br />
+        <p>Rosemary drew these rectangles using a computer:</p>
+        <div class="centerimage"><img src="s1q11_1.png" /></div>
+        <p>Rectangle A has <em>width</em> 3 and <em>length</em> 5: <img src="s1q11_2.png" /></p>
+
+        <p>The computer repeated these instructions to draw the other rectangles:</p>
+        <div id="q11d">
+            <p>new <em>width</em> = previous <em>width</em> &times; 2</p>
+            <p>new <em>length</em> = previous <em>length</em> + previous <em>width</em></p>
+        </div>
+        <div class="question">
+            <p>Complete this table.</p>
+            <table id="q11t">
+                <tr><td></td><td><em>width</em></td><td><em>length</em></td></tr>
+                <tr><td>rectangle A</td><td>3</td><td>5</td><td></td></tr>
+                <tr><td>rectangle B</td><td><input name="q11aib1" type="text" /></td><td><input name="q11aib2" type="text" /></td><td></td></tr>
+                <tr><td>rectangle C</td><td><input name="q11aib3" type="text" /></td><td><input name="q11aib4" type="text" /></td><td></td></tr>
+                <tr><td>rectangle D</td><td><input name="q11aib5" type="text" /></td><td><input name="q11aib6" type="text" /></td><td><script>buttonset(11,'a');</script></td></tr>
+            </table>
+        </div>
+    </form>
+
+
+
+
+
+
+</div>
+
+
+<div id="stat"><script> stat(9,1); </script></div>
+
+<div id="foot"><script> foot(9,1); </script></div>
+
+</body>
+<script> if ((!!navigator.vendor) && (navigator.vendor.indexOf("Apple")!=-1)) {
+    document.write('<scr'+'ipt> pagepath=document.URL.substr(0,document.URL.lastIndexOf("/")+1);');
+    document.write('for (var prop in window) { t'+'ry { srcstr = eval(prop+".src") } catch( err ) { srcstr="none" };');
+    document.write('if ((typeof(srcstr)!="undefined") && (srcstr.indexOf(".gif")!=-1) && (srcstr.indexOf("/")==-1))');
+    document.write('{ eval(prop).src = pagepath+srcstr } } </scr'+'ipt>'); } </script>
+</html>
